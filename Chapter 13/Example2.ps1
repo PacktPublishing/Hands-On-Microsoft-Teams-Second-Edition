@@ -4,7 +4,7 @@ $channelName = "Procedures"
 
 #Connecting to Microsoft Teams and getting all the teams to which the user belongs. This will include those teams where the user is an owner and member
 Connect-MicrosoftTeams
-$teamsWhereIam = Get-Team -User $teamOwner
+$teamsWhereIam = Get-Team -User $teamOwnerEmail
 
 #Looping through all the teams
 for ($i=0; $i -lt $teamsWhereIam.length; $i++) {
