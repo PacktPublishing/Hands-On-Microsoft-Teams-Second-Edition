@@ -6,4 +6,4 @@ $policyName = "CustomNewsApp"
 Connect-MicrosoftTeams
 
 #Apply a batch Policy assignment to modify the Teams App Setup Policy to the users defined in the list
-New-CsBatchPolicyAssignmentOperation -PolicyType TeamsApp-SetupPolicy -PolicyName $policyName -Identity $users
+New-CsBatchPolicyAssignmentOperation -PolicyType TeamsAppSetupPolicy -PolicyName $policyName -Identity $users
